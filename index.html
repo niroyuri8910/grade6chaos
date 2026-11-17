@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 6 Chaos HQ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">CHAOS<span>HQ.</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#generator">Excuse Lab</a>
+            <a href="#survival">Survival Kit</a>
+            <a href="#timetable">Timetable</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+
+        <div class="grade-label">GRADE 6 EDITION</div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO YOUR DIGITAL SCHOOL LIFE</p>
+
+            <h1>WELCOME TO<br>
+                THE <span>CHAOS.</span>
+            </h1>
+
+            <p class="hero-description">
+                Homework is temporary. Memories are forever.
+                But unfortunately, the assignments are also forever.
+            </p>
+
+            <a href="#generator" class="main-button">
+                ENTER THE CHAOS →
+            </a>
+
+            <p class="small-note">EST. BY STUDENTS. SURVIVED BY STUDENTS.</p>
+        </div>
+
+        <div class="hero-card">
+            <p class="card-label">CURRENT STATUS</p>
+            <h2>Surviving.</h2>
+            <p>Brain activity: questionable.</p>
+            <p>Homework status: classified.</p>
+            <p>Energy level: depends on lunch.</p>
+            <div class="status-bar">
+                <div></div>
+            </div>
+            <small>ENERGY LEVEL: 42%</small>
+        </div>
+    </section>
+
+    <section class="intro section">
+        <p class="eyebrow">THE STUDENT EXPERIENCE</p>
+        <h2>School is an adventure.<br>
+            <span>Sometimes a questionable one.</span>
+        </h2>
+
+        <div class="intro-grid">
+            <div class="info-card">
+                <span class="emoji">📚</span>
+                <h3>THE ACADEMICS</h3>
+                <p>Tests, assignments, projects and the never-ending search for a working pen.</p>
+            </div>
+
+            <div class="info-card">
+                <span class="emoji">⏰</span>
+                <h3>THE TIMETABLE</h3>
+                <p>One minute you're in English. The next, you're wondering how Maths arrived.</p>
+            </div>
+
+            <div class="info-card">
+                <span class="emoji">🍱</span>
+                <h3>THE LUNCH BREAK</h3>
+                <p>The most important academic period. No further questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="generator-section section" id="generator">
+        <p class="eyebrow">THE MOST IMPORTANT LABORATORY</p>
+        <h2>THE EXCUSE <span>GENERATOR.</span></h2>
+
+        <p class="section-description">
+            Need a random fictional excuse for a school-themed joke?
+            The machine has entered the chat.
+        </p>
+
+        <div class="generator-box">
+            <div class="machine-icon">⚡</div>
+
+            <p class="card-label">EXCUSE MACHINE 3000</p>
+
+            <div id="excuse-output" class="output">
+                Your excuse will appear here.
+            </div>
+
+            <button id="excuse-button" class="main-button">
+                GENERATE EXCUSE
+            </button>
+
+            <p id="excuse-count" class="small-note">
+                EXCUSES GENERATED: 0
+            </p>
+        </div>
+    </section>
+
+    <section class="survival-section section" id="survival">
+        <p class="eyebrow">A GUIDE TO SURVIVING SCHOOL</p>
+        <h2>THE SURVIVAL <span>KIT.</span></h2>
+
+        <div class="survival-grid">
+            <div class="survival-card">
+                <span>01</span>
+                <h3>THE PEN PROBLEM</h3>
+                <p>Always carry an extra pen. The first one will mysteriously disappear.</p>
+            </div>
+
+            <div class="survival-card">
+                <span>02</span>
+                <h3>THE HOMEWORK RULE</h3>
+                <p>Check your homework before the last five minutes of the day.</p>
+            </div>
+
+            <div class="survival-card">
+                <span>03</span>
+                <h3>THE LUNCH STRATEGY</h3>
+                <p>Never underestimate the importance of carrying your lunch.</p>
+            </div>
+
+            <div class="survival-card">
+                <span>04</span>
+                <h3>THE TEST STRATEGY</h3>
+                <p>Read the questions carefully. Your brain sometimes likes to freestyle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tip-section section">
+        <p class="eyebrow">RANDOM WISDOM GENERATOR</p>
+        <h2>NEED SOME <span>ADVICE?</span></h2>
+
+        <div class="tip-box">
+            <p id="tip-output">Click the button for some questionable wisdom.</p>
+            <button id="tip-button" class="secondary-button">
+                GIVE ME ADVICE
+            </button>
+        </div>
+    </section>
+
+    <section class="mood-section section">
+        <p class="eyebrow">BE HONEST.</p>
+        <h2>WHAT'S YOUR SCHOOL <span>MOOD?</span></h2>
+
+        <div class="mood-grid">
+            <button class="mood-button" data-mood="Academic weapon mode activated.">📚 Studying</button>
+            <button class="mood-button" data-mood="Running on lunch and pure determination.">🍱 Hungry</button>
+            <button class="mood-button" data-mood="Physically in class. Mentally on vacation.">🏝️ Mentally absent</button>
+            <button class="mood-button" data-mood="Today is surprisingly going well.">✨ Thriving</button>
+        </div>
+
+        <p id="mood-output">Choose your mood above.</p>
+    </section>
+
+    <section class="timetable-section section" id="timetable">
+        <p class="eyebrow">THE DAILY MYSTERY</p>
+        <h2>THE CLASSROOM <span>LINE-UP.</span></h2>
+
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th>PERIOD</th>
+                    <th>SUBJECT</th>
+                    <th>STATUS</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Mathematics</td>
+                    <td>Brain loading...</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Science</td>
+                    <td>Experimenting</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>English</td>
+                    <td>Vocabulary mode</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Social Science</td>
+                    <td>Exploring history</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Lunch</td>
+                    <td>MAIN EVENT</td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>Creative Period</td>
+                    <td>Let us cook.</td>
+                </tr>
+            </table>
+        </div>
+
+        <p class="small-note">DEMO TIMETABLE — EDIT THESE SUBJECTS TO MATCH YOUR SCHOOL.</p>
+    </section>
+
+    <section class="quiz-section section" id="quiz">
+        <p class="eyebrow">TIME TO TEST YOUR KNOWLEDGE</p>
+        <h2>THE SCHOOL <span>QUIZ.</span></h2>
+
+        <div class="quiz-box">
+            <p id="quiz-number">QUESTION 1 OF 3</p>
+            <h3 id="quiz-question">Loading question...</h3>
+
+            <div id="quiz-options" class="quiz-options"></div>
+
+            <p id="quiz-feedback"></p>
+
+            <button id="next-question" class="main-button" hidden>
+                NEXT QUESTION →
+            </button>
+        </div>
+    </section>
+
+    <section class="final-section section">
+        <p class="eyebrow">AND THAT CONCLUDES THE REPORT.</p>
+        <h2>GOOD LUCK.<br><span>YOU'LL NEED IT.</span></h2>
+        <p>Another day. Another timetable. Another questionable decision.</p>
+        <a href="#home" class="main-button">BACK TO TOP ↑</a>
+    </section>
+
+    <footer>
+        <h2>CHAOS<span>HQ.</span></h2>
+        <p>Made by a Grade 6 survivor.</p>
+        <p>© 2026 CHAOS HQ. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+</html>
